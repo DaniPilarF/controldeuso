@@ -1,0 +1,46 @@
+body{
+  margin:0;
+  background-color:#F2F5F7;
+  font-family:Roboto;
+}
+
+.texto-base{
+  color:#8B96A5;
+  font-size:13px;
+}
+
+.layout-row{
+  display:flex;
+  flex-direction: row;
+}
+
+.drawerHeader{
+  padding:20px
+}
+
+.drawer .clientList .item{
+  padding:15px;
+  border-left:3px solid red;
+
+}
+
+.drawer .clientList .item .title{
+  font-weight:700;
+  color:#707070;
+
+}
+.drawer .clientList .item:hover{
+  background-color:#FFF6F6
+}
+
+
+.drawerHeader .title{
+  font-weight:700;
+  color:#707070;
+}
+
+.flexcontent{
+  flex:1;
+  box-sizing:border-box;
+}
+
