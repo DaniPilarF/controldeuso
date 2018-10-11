@@ -18,11 +18,14 @@ class Header extends Component {
     };
 
     getClients = () => {
-        
         return this.props.clientsList.map((client, index) =>{
             return(
-                <div className="item">
-                    <div className='title'>{client.cliente}</div>
+                <div className="item layout-row">
+                    <div className='photo-container'></div>
+                    <div>
+                        <div className='title'>{client.cliente}</div>
+                        <div className='texto-base'>{client.descripcion}</div>
+                    </div>
                 </div>
             )
         })
@@ -47,6 +50,7 @@ class Header extends Component {
                     variant='persistent'
                     open={this.state.drawerIsOpen}
                     className='drawer'
+                    elevation={23}
                     >
                     <div className="drawerHeader layout-row">
                     <div className="title">Clientes</div>
