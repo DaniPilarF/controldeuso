@@ -3,6 +3,7 @@ import './App.scss';
 import './index.css';
 import Header from './Header';
 import Card from './Card';
+import HomeSearchBar from './HomeSearchBar';
 
 class App extends Component {
   state = {
@@ -31,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header userName={this.state.usuario.nombre} clientsList={this.state.clientsList}/>
-        <span>contenido</span>
+        <HomeSearchBar/>
         <div className='cards-container layout-row layout-wrap'>
           {this.getCards()}
         </div>

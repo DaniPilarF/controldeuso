@@ -2,6 +2,9 @@ $light-grey: #A5A5A5;
 $dark-grey:#707070;
 $base-grey: #8B96A5;
 
+$accent: #ff9b69;
+$accent100: mix(#fff,$accent,93%);
+
 body{
   margin:0;
   background-color:#F2F5F7;
@@ -11,6 +14,11 @@ body{
 .texto-base{
   color:$base-grey;
   font-size:13px;
+}
+
+.header-title{
+  font-weight:700;
+  color:$dark-grey;
 }
 
 .layout-row{
@@ -49,14 +57,10 @@ body{
       border-bottom-right-radius: 50px;
       width:180px;
 
-      .title{
-        font-weight:700;
-        color:$dark-grey;
-      }
     }
     .item:hover{
-      background-color:#FFF6F6;
-      border-left:3px solid rgb(255, 155, 105);
+      background-color:$accent100;
+      border-left:3px solid $accent;
     }
   }
   
@@ -149,4 +153,17 @@ body{
 
 .card:hover{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.241)
+}
+
+.homesearch{
+  margin:20px 10px 10px 10px;
+}
+
+.filterbox{
+  .icon{
+    color:$base-grey;
+    font-size:18px;
+    margin:0px 5px;
+  }
+  
 }

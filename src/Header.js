@@ -31,7 +31,6 @@ class Header extends Component {
         })
     }
 
-    
     render (){
         return(
             <div>
@@ -53,7 +52,7 @@ class Header extends Component {
                     elevation={23}
                     >
                     <div className="drawerHeader layout-row">
-                    <div className="title">Clientes</div>
+                        <div className="header-title">Clientes</div>
                     </div>
                     <div className="clientList">{this.getClients()}</div>
                 </Drawer>
