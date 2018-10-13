@@ -1,0 +1,163 @@
+$light-grey: #A5A5A5;
+$dark-grey:#707070;
+$base-grey: #8B96A5;
+
+$accent: #8eff79;
+$accent100: mix(#fff,$accent,93%);
+
+.texto-base{
+  color:$base-grey;
+  font-size:13px;
+}
+
+.header-title{
+  font-weight:700;
+  color:$dark-grey;
+}
+
+.layout-row{
+  display:flex;
+  flex-direction: row;
+}
+
+.flexcontent{
+  flex:1;
+  box-sizing:border-box;
+}
+
+.layout-wrap{
+  flex-wrap: wrap;
+  -webkit-flex-wrap:wrap;
+}
+
+.flex{
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.layout-row .flex{
+  min-width: 0;
+}
+
+.drawer{
+  .clientList{
+    .item{
+      padding:10px 15px;
+      border-left:3px solid white;
+      margin-right:20px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      width:180px;
+
+    }
+    .item:hover{
+      background-color:$accent100;
+      border-left:3px solid $accent;
+    }
+  }
+
+  .drawerHeader{
+    padding:20px;
+    .title{
+      font-weight:700;
+      color:$dark-grey;
+    }
+  }
+}
+
+.photo-container{
+  width:34px;
+  height:35px;
+  border-radius:50px;
+  background-color: rgb(216, 216, 216);
+  margin-right:10px;
+
+}
+
+
+.cards-container{
+  margin:5px;
+}
+
+.card{
+
+  background-color:white;
+  border-radius:6px;
+  border-top:5px solid;
+  margin:5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  -webkit-transition: ease-out  0.2s;
+  -moz-transition: ease-out  0.2s;
+  transition: ease-out  0.2s;
+
+  .container .content{
+    padding:20px;
+  }
+  .title{
+    font-weight:700;
+    color:#595959;
+    font-size:22px;
+  }
+  .subtitle{
+    text-transform:uppercase;
+    font-size:11px;
+    color:$light-grey;
+  }
+  .category{
+
+    .stars{
+
+      .inactive{
+        color:#D1D1D1;
+      }
+
+      .active{
+        color:#FCD477;
+      }
+
+    }
+    .subtitle{
+      line-height:26px;
+    }
+  }
+  .version{
+    color:#595959;
+    font-size:11px;
+    text-transform:uppercase;
+  }
+  .score{
+    width: 35px;
+    height: 35px;
+    border-radius:50px;
+    text-align:center;
+    border: 1px solid;
+    margin:15px;
+    line-height:35px;
+    font-size:19px;
+    font-weight:300;
+
+  }
+  .flag{
+    vertical-align:sub;
+    margin-left:13px;
+  }
+}
+
+.card:hover{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.241)
+}
+
+.homesearch{
+  margin:20px 10px 10px 10px;
+}
+
+.filterbox{
+  .icon{
+    color:$base-grey;
+    font-size:18px;
+    margin:0px 5px;
+  }
+
+}
