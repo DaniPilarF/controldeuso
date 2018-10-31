@@ -1,10 +1,12 @@
 $light-grey: #A5A5A5;
 $dark-grey:#707070;
 $base-grey: #8B96A5;
+$line-grey:#e4e4e4;
 
 $accent: #8eff79;
 $accent100: mix(#fff,$accent,93%);
-
+$accent300: mix(#fff,$accent,50%);
+$accent-shadow300: mix(#a3a3a3,$accent,50%);
 body{
   margin:0;
   background-color:#F2F5F7;
@@ -28,6 +30,12 @@ body{
     flex-direction: row;
   }
 
+  .layout-column{
+    display:flex;
+    flex-direction: column;
+  }
+
+
   .flexcontent{
     flex:1;
     box-sizing:border-box;
@@ -47,6 +55,19 @@ body{
 
   .layout-row .flex{
     min-width: 0;
+  }
+
+  .text-link{
+    text-transform:uppercase;
+    color:$base-grey;
+    margin:0px 10px;
+    letter-spacing:1.5px;
+    font-weight:300;
+    font-size:14px;
+  }
+
+  .text-link.active{
+    font-weight:500;
   }
 
   .drawer{
@@ -105,7 +126,7 @@ body{
     }
     .title{
       font-weight:700;
-      color:#595959;
+      color:$dark-grey;
       font-size:22px;
     }
     .subtitle{
@@ -170,4 +191,80 @@ body{
 
   }
 
+  .client-container .title-container{
+
+    padding:20px 30px;
+    .title{
+      font-weight:700;
+      color:$dark-grey;
+      font-size:29px;
+    }
+    .subtitle{
+      text-transform:uppercase;
+      font-size:14px;
+      color:$light-grey;
+    }
+    .subtitle-dark{
+      text-transform:uppercase;
+      font-size:14px;
+      color:$dark-grey;
+      font-weight:bold;
+    }
+    .version{
+      font-weight:300;
+      font-size:26px
+    }
+    .date{
+      font-size:12px;
+      color:$light-grey;
+    }
+    .score{
+      width: 60px;
+      height: 60px;
+      border-radius:70px;
+      text-align:center;
+      line-height:60px;
+      font-size:25px;
+      font-weight:300;
+      margin-left:20px;
+      color:white;
+    }
+  }
+
+  .client-container .bigCard-container{
+    margin: 5px 10px;
+    .big-card{
+      background-color:white;
+      border-radius:6px;
+      margin:5px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+      -webkit-transition: ease-out  0.2s;
+      -moz-transition: ease-out  0.2s;
+      transition: ease-out  0.2s;
+
+      .bigcard-title-container{
+        padding:15px 20px;
+        border-bottom:1px solid $line-grey;
+        .title{
+          color:$dark-grey;
+          font-weight:500;
+          font-size:17px
+        }
+      }
+      .bigcard-content-container{
+        margin:10px;
+
+          // .highlight-box{
+          //   background-color:$accent300;
+          //   width:300px;
+          //   height:100px;
+          //   border-radius:7px;
+          //   box-shadow:0px 3px 8px $accent-shadow300;
+          //   margin:10px;
+          // }
+      }
+
+      
+    }
+  }
 }
